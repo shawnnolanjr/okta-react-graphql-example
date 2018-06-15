@@ -7,8 +7,9 @@ import * as OktaJwtVerifier from '@okta/jwt-verifier';
 import { CurrentUser } from './CurrentUser';
 
 const oktaJwtVerifier = new OktaJwtVerifier({
-  clientId: '0oaf8zw7lslnzoJia0h7',
-  issuer: 'https://dev-669532.oktapreview.com/oauth2/default'
+	issuer: 'https://dev-742873.oktapreview.com/oauth2/default',
+	client_id: '0oafh6daewbSxTSvp0h7',
+	redirect_uri: 'http://localhost:3000/implicit/callback',
 });
 
 bootstrap({

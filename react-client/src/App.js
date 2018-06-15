@@ -13,10 +13,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Security issuer='https://dev-669532.oktapreview.com/oauth2/default'
-                  client_id='0oaf8zw7lslnzoJia0h7'
-                  redirect_uri={window.location.origin + '/implicit/callback'}
-                  onAuthRequired={onAuthRequired}>
+	      <Security issuer='https://dev-742873.oktapreview.com/oauth2/default'
+	                client_id='0oafh6daewbSxTSvp0h7'
+	                redirect_uri={'http://localhost:3000/implicit/callback'}
+	                onAuthRequired={onAuthRequired}>
           <Route path='/' exact={true} component={Home}/>
           <SecureRoute path='/points' component={Points}/>
           <Route path='/login' render={() => <Login baseUrl='https://dev-669532.oktapreview.com'/>}/>
